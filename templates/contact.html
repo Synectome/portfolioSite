@@ -4,7 +4,7 @@
     <h1>
         Contact me :)
     </h1>
-    <form action="/contact" method="post">
+    <form action="{{ url_for('contact') }}" method="post">
         <!-- csrf requires secret key to be set -->
         {{ form.csrf_token() }} 
         {{ form.name.label }}{{ form.name }} <br>

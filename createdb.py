@@ -12,4 +12,7 @@ if __name__ == '__main__':
                     company="testers Inc.",
                     email="firstRow@entry.com",
                     message="this is a legitimate submission\n which may have \t chars like this ><)*(^^%$$#@%$#@")
-    
+    db.session.add(mesg)
+    db.session.commit()
+
+    print(Message.query.all())
