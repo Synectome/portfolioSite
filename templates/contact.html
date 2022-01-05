@@ -1,7 +1,16 @@
 {% extends "base.html" %}
 
 {% block main %}
-    <body>
+    <h1>
         Contact me :)
-    </body>
+    </h1>
+    <form action="/contact" method="post">
+        <!-- csrf requires secret key to be set -->
+        {{ form.csrf_token() }} 
+        {{ form.name.label }}{{ form.name }} <br>
+        {{ form.company.label }}{{ form.company }} <br>
+        {{ form.email.label }}{{ form.email }} <br>
+        {{ form.message.label }}{{ form.message }} <br>
+        {{ form.submit }} <br>
+    </form>
 {% endblock %}  
