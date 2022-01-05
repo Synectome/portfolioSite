@@ -1,0 +1,9 @@
+
+Virtual environment setup
+https://tech.serhatteker.com/post/2018-12/virtualenv/
+
+SIMPLE FLASK APP TUT
+https://www.coursera.org/learn/python-flask/ungradedLti/YEbTy/create-your-first-web-app-with-python-and-flask
+
+Deploy flask app on VPS
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
