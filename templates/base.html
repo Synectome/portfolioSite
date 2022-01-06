@@ -1,35 +1,46 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-        <title>Jesse's Portfolio</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
-            </ul>
-          </nav>
-          <br>
-          {% with messages = get_flashed_messages() %}
-            {% if messages %}
-              {% for message in messages %}
-              <div class="alert alert-primary">
-                {{ message }}
-              </div>
-              {% endfor %}
-            {% endif %}
-          {% endwith %}
-          <br>
-          {% block main %}{% endblock %}
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }} - Template{% else %}Welcome to Jesse's Portfolio{% endif %}
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </body>
-</html>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div>
+            <br>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-primary">
+                {{ message }}
+                </div>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <br>
+        </div>
+        {# application content needs to be provided in the app_content block #}
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}

@@ -10,4 +10,10 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-applicati
 
 #######################################################
 #######################################################
+Inspirational flask based portfolios:
+https://github.com/mkilicarslan/portfolio-flask
+
+
+Bootstrap theme starting point is from:
+https://startbootstrap.com/theme/grayscale
 

@@ -1,16 +1,22 @@
 {% extends "base.html" %}
 
-{% block main %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block app_content %}
     <h1>
         Contact me :)
     </h1>
-    <form action="{{ url_for('contact') }}" method="post">
+    <form action="{{ url_for('index') }}" method="post">
         <!-- csrf requires secret key to be set -->
         {{ form.csrf_token() }} 
-        {{ form.name.label }}{{ form.name }} <br>
-        {{ form.company.label }}{{ form.company }} <br>
-        {{ form.email.label }}{{ form.email }} <br>
-        {{ form.message.label }}{{ form.message }} <br>
-        {{ form.submit }} <br>
+        <div style="width: 50%">
+            {{ wtf.form_field(form.name) }}
+            {{ wtf.form_field(form.company) }}
+            {{ wtf.form_field(form.email) }}
+            {{ wtf.form_field(form.message) }}
+            {{ wtf.form_field(form.submit) }}
+        </div>
     </form>
+
+
 {% endblock %}  
