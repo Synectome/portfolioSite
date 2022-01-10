@@ -17,3 +17,9 @@ https://github.com/mkilicarslan/portfolio-flask
 Bootstrap theme starting point is from:
 https://startbootstrap.com/theme/grayscale
 
+======================================================
+Getting VM to reconnect to internet (ubuntu)
+$ ip link
+then you'll see the interface (eg, ens33)
+$ sudo ip link set ens33 up
+$ sudo dhclient ens33 -v
