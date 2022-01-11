@@ -19,17 +19,6 @@ def index():
         return redirect(url_for('index'))
     return render_template('index.html', form=form, current_title="Jesse's Portfolio")    
 
-# @app.route('/contact', methods=['GET', 'POST'])
-# def contact():
-#     form = forms.ContactMeForm()
-#     if form.validate_on_submit():
-#         mesg = Message(name=form.name.data, 
-#             company=form.company.data, 
-#             email=form.email.data, 
-#             message=form.message.data)
-#         db.session.add(mesg)
-#         db.session.commit()
-#         flash('Thank you for contacting me.\nI will be in touch soon.')
-#         # url_for is taking in a funciton name here
-#         return redirect(url_for('index'))
-#     return render_template('contact.html', form=form)
+@app.route('/game-development')
+def game_development():
+    return render_template('gamedev.html', current_title="Game Development")

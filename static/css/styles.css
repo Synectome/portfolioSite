@@ -11,6 +11,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-mainOrange: #d37427;
+  --bs-mainOrange-border: #d67e36;
+  --bs-secondOrange: #e78a11;
+  --bs-secondOrange-border: #e79325;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #7464a1;
@@ -7942,6 +7946,8 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -11633,9 +11639,9 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
-    border-width: 0.25rem;
-    width: 30%;
+    /* border-color: #64a19d; */
+    /* border-width: 0.25rem; */
+    /* width: 30%; */
   }
 }
 
@@ -11707,4 +11713,38 @@ body {
   /* display:flex; */
   justify-content: center;
   width: 65%;
+}
+
+.text-orange {
+  color:#d37427;
+  --bs-text-opacity: 1;
+  /* color: rgba(var(--bs-mainOrange), var(--bs-text-opacity)) !important; */
+  /* color:--bs-mainOrange !important; */
+/* 
+  --bs-mainOrange: #d37427;
+  --bs-mainOrange-border: #d67e36; */
+}
+
+/* some id's for hovering over the project cards */
+#project-card {
+  color:#d37427;
+}
+
+#project-card h4 {
+  font-weight: bold;
+  /* font-size: 4em; */
+  font-size:24px;
+  transition: all 500ms;
+}
+
+#project-card h4:hover {
+  font-size: 32px;
+  font-size-adjust: 20px;
+  transition: all 500ms;
+}
+
+/* id for making link formating  */
+#invisible-link {
+  color: #d37427;
+  text-decoration: none;
 }
