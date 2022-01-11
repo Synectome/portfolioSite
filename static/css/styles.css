@@ -11748,3 +11748,17 @@ body {
   color: #d37427;
   text-decoration: none;
 }
+
+/* Navebar home button hover details */
+#navbar-home {
+
+}
+
+#navbar-home a {
+  font-weight: bold;
+}
+
+#navbar-home a:hover {
+  font-weight: bold;
+  color:#e79325;
+}
