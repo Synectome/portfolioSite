@@ -11830,11 +11830,19 @@ body {
     0 0 151px #d37427;
 }
 
+/* -- Used to make phots grayscale by defafult, 
+      but return to color upon hover 
+      https://stackoverflow.com/questions/34840001/how-to-make-smooth-grayscale-on-hover-using-css -- */
 #project-cover-photo img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
   filter: grayscale(100%) !important;
+  transition: all 0.5s ease;
 }
 
 #project-cover-photo:hover img{
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
   filter: grayscale(0) !important;
 }
 
