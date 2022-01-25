@@ -11815,7 +11815,7 @@ body {
 
 /*  hover glow effect */
 /*  https://css-tricks.com/how-to-create-neon-text-with-css/ */
-#neonText p:hover{
+#neonText h2:hover{
   color: #fff;
   text-shadow:
     /* White glow */
