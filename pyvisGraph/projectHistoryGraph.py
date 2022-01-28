@@ -5,29 +5,25 @@ from pyvis.network import Network
 net = Network()
 
 # Generate Nodes
-net.add_node(1, label="Web Dev", title='Web Development', value=200, color='#d37427')
-net.add_node(2, label="Game Dev", title='Game Development', value=200, color='#d37427')
-net.add_node(3, label="Data Science", title='Data Science', value=200, color='#d37427')
-net.add_node(4, label="Software Dev", title='Software Development', value=200, color='#d37427')
+net.add_node(1, shape='image', image='static/assets/img/WebDevNode.png', label="Web Dev", title='Web Development', value=200, color='#d37427')
+net.add_node(2, shape='image', image='static/assets/img/GameDevNode.png', label="Game Dev", title='Game Development', value=200, color='#1cabc4')
+net.add_node(3, shape='image', image='static/assets/img/DataSciNode.png', label="Data Science", title='Data Science', value=200, color='#6610f2')
+net.add_node(4, shape='image', image='static/assets/img/SoftDevNode.png', label="Software Dev", title='Software Development', value=200, color='#399136')
 
-net.add_node(5, shape='circularImage', image='https://www.python.org/static/community_logos/python-logo-master-v3-TM.png', label="Python", value=50, color='#adb5bd')
-net.add_node(6, label="Java", value=50, color='#adb5bd')
-net.add_node(7, label="C++", value=50, color='#adb5bd')
-net.add_node(8, label="C", value=50, color='#adb5bd')
-net.add_node(9, label="R", value=50, color='#adb5bd')
-net.add_node(10, label="JavaScript", value=50, color='#adb5bd')
-net.add_node(11, label="SQL", value=50, color='#adb5bd')
-net.add_node(12, label="HTML", value=50, color='#adb5bd')
-net.add_node(13, label="CSS", value=50, color='#adb5bd')
-net.add_node(14, label="GDScript", value=50, color='#adb5bd')
+net.add_node(5, shape='image', image='static/assets/img/python(250px).png', title="Python", value=120, color='#adb5bd')
+net.add_node(6, shape='image', image='static/assets/img/Java(250px).png', title="Java", value=55, color='#adb5bd')
+net.add_node(7, shape='image', image='static/assets/img/Cpp(250px).png', title="C++", value=100, color='#adb5bd')
+net.add_node(8, shape='image', image='static/assets/img/Clang(250px).png', title="C", value=80, color='#adb5bd')
+net.add_node(9, shape='image', image='static/assets/img/R(250px).png', title="R", value=100, color='#adb5bd')
+net.add_node(10, shape='image', image='static/assets/img/javascript(250px).png', title="JavaScript", value=60, color='#adb5bd')
+net.add_node(11, shape='image', image='static/assets/img/MySQL(250px).png', label="SQL", value=65, color='#adb5bd')
+net.add_node(12, shape='image', image='static/assets/img/HTML(apx.250px).png', title="HTML", value=70, color='#adb5bd')
+net.add_node(13, shape='image', image='static/assets/img/css(apx.250px).png', title="CSS", value=60, color='#adb5bd')
+net.add_node(14, shape='image', image='static/assets/img/GDscript(250px).png', title="GDScript", value=100, color='#adb5bd')
 
-net.add_node(15, label="Godot", value=50, color='#1cabc4')
-net.add_node(16, label="Blender", value=50, color='#1cabc4')
-net.add_node(17, label="REDCap", value=50, color='#1cabc4')
-
-
-
-
+net.add_node(15, shape='image', image='static/assets/img/Godot(250px).png', title="Godot", value=90, color='#1cabc4')
+net.add_node(16, shape='image', image='static/assets/img/blender(250px).png', title="Blender", value=60, color='#1cabc4')
+net.add_node(17, shape='image', image='static/assets/img/REDCap(250px).png', title="REDCap", value=50, color='#1cabc4')
 
 
 
