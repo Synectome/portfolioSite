@@ -1,0 +1,155 @@
+[33mcommit c45e9621744bb91e520b13eb491df87ee04ae244[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Tue Feb 1 06:05:59 2022 -0800
+
+    git removed my video that was too large to upload to git
+
+[33mcommit 655e2afba99cace24ae23b1760abf016add3747c[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Mon Jan 31 12:43:29 2022 -0800
+
+    added git ignore to stop video upload
+
+[33mcommit d24fa715b547921ee543d93bb588ced3ebe9ffe4[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Mon Jan 31 12:23:03 2022 -0800
+
+    HP Boating page is started
+
+[33mcommit f765fbdd988a0456da2fa7bf99de71cf7f219594[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Mon Jan 31 11:57:44 2022 -0800
+
+    media for HPBoating project page
+
+[33mcommit d8111a304129bf08914549924266387afe11527f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Fri Jan 28 10:04:16 2022 -0800
+
+    Took out labels from graph HTML. GIMP'd some node photos for project categories
+
+[33mcommit bc9e1f83e33a71700dc1fdc96f177906cf418574[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 26 07:04:06 2022 -0800
+
+    cropped photos added
+
+[33mcommit e8fad63a508c18d9b7db4f8dbb30c8144e90b9d7[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 26 06:22:59 2022 -0800
+
+    source photos for graph node images
+
+[33mcommit 175799f20433a5f1e92373c30f65a363adb86e7a[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Tue Jan 25 12:48:11 2022 -0800
+
+    Rough skill/project Graph html doc
+
+[33mcommit 9bfdf45f86f86d747ec34042c6ad2640b2db77b2[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Tue Jan 25 10:57:23 2022 -0800
+
+    removed a video, changed where neon text hover is being triggered
+
+[33mcommit a2ac44271d3db8d2595555aca5df3c2bd07936f3[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Tue Jan 18 14:15:40 2022 -0800
+
+    more filter options set in css styles
+
+[33mcommit 66fc41b03c06aecbb92412a242bacfef3103470e[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Mon Jan 17 09:24:18 2022 -0800
+
+    grayscale -> color with hover for project section photos
+
+[33mcommit 2552f99f3dd2345abaa2021819595ceef281ccb6[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Fri Jan 14 13:46:09 2022 -0800
+
+    cover images for project categories
+
+[33mcommit 03ee470ace30b7767401aa8391880ca6ea3aae98[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Fri Jan 14 09:03:40 2022 -0800
+
+    Background video working perfectly.
+
+[33mcommit 9850d35e3c6ba91a5065b1103a785916ada958d4[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 12 13:01:48 2022 -0800
+
+    made a static dir for video assets. I want to loop in some procedural gen art stuff.
+
+[33mcommit ee7b5ba2b3697ccd8f25ea96b2955e6edc435696[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 12 09:16:23 2022 -0800
+
+    colour changes in the css style sheet. Also added some copy for the boat race game on gamedev page.
+
+[33mcommit 18c71011f055ea24703154fd5cbef5a0708c8d28[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Tue Jan 11 12:31:59 2022 -0800
+
+    a new main image for software development. My letter wiggle script doesn't seem to work.
+
+[33mcommit 9adc9b92c2b5fb920f75d9e68c9833fecbf7546b[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Tue Jan 11 07:16:56 2022 -0800
+
+    invisible links id in styles.css
+
+[33mcommit 8c65fde72351e9b386cea62414daa4b5c1066097[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Mon Jan 10 10:43:18 2022 -0800
+
+    fixed a bug with  this virtual machine, and made a note on the fix in portfolionotes.txt
+
+[33mcommit b707011e06766ae847e83f10a3db09031c32bd7c[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Mon Jan 10 09:26:38 2022 -0800
+
+    changed primary button colour. photoshopped ipad. venv activation script. copied index.html to make proj pages.
+
+[33mcommit 3a06704ce63a20826d7097e6c14d3d2eb63b66ac[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Thu Jan 6 12:49:28 2022 -0800
+
+    grayscale theme loaded in. Added my contact form into the themed index page. Some css changes.
+
+[33mcommit 47b319f4f82e4f6fb761c6ba8cc867d0f460ab42[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 5 13:18:42 2022 -0800
+
+    working database message handler. Working flash messages for successfull submission. requirement saving and installing scripts.
+
+[33mcommit 509ed49cf5b16e89f4c70185c754b829dba0d246[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 5 09:38:52 2022 -0800
+
+    db models, and db file generator completed. Data entry from form is next
+
+[33mcommit 39087d05a86ce45aa591186c96c93dd9c90940c0[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 5 09:03:14 2022 -0800
+
+    Contact form is superficially complete, next is implementing sqlite to store submissions
+
+[33mcommit 7e63661764a8473eb322689bf5a5c8c84970e405[m
+Author: Jesse Bourret-Gheysen <jessedgb@gmail.com>
+Date:   Wed Jan 5 06:53:34 2022 -0800
+
+    initial rough setup of repo
+
+[33mcommit 5da7fd53edd091545a5675bfb312828ef069ec02[m
+Author: Synectome <32442554+Synectome@users.noreply.github.com>
+Date:   Wed Jan 5 06:40:56 2022 -0800
+
+    Changing .gitignore to block out my venv
+
+[33mcommit e3904b167e179495193d9cc41309451e8217abef[m
+Author: Synectome <32442554+Synectome@users.noreply.github.com>
+Date:   Wed Jan 5 09:39:27 2022 -0500
+
+    Initial commit

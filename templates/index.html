@@ -69,13 +69,14 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/bg-masthead.jpg" alt="..." /></div>
+                    {% include 'skill_graph.html' %}
+                    <!-- <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Past Projects</h4>
                             <p class="text-black-50 mb-0">My projects range from university assignments to work experience in game developement and data science.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- Game Dev Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="project-cover-photo">
@@ -85,7 +86,7 @@
                             <div class="d-flex h-100">
                                 <div id="project-card" class="project-text w-100 my-auto text-center text-lg-left">
                                     <a id="invisible-link" href="{{ url_for('game_development') }}">
-                                    <h4 class="text-orange">Game Development</h4>
+                                    <h4 class="text-orange">Game <br>Development</h4>
                                     </a>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
@@ -100,7 +101,7 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div id="project-card" class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-orange">Software Development</h4>
+                                    <h4 class="text-orange">Software <br>Development</h4>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -130,7 +131,7 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div id="project-card" class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-orange">Web Development</h4>
+                                    <h4 class="text-orange">Web <br>Development</h4>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>

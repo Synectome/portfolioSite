@@ -1,0 +1,72 @@
+{% extends "project_base.html" %}
+{% block content %}
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Hyde Park Boating</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A 3D boat web browser boat racing game.</h2>
+                    <a class="btn btn-primary" href="#about">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <video id="background-video" autoplay muted loop src="static/assets/HPBoating/levelBlenderGen.mp4" ></video>
+    </header>
+
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            
+            <!-- Project One Row-->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/GameDevMain.png" alt="..." /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Hyde park B.I.A. boat racing</h4>
+                                <p class="mb-0 text-white-50">A 3D boat racing game with live leaderboard, created in the summer of 2021 for the Hyde Park Business Improvement Association's annual Pond Festival. The game is rendered in a 'low poly' style. The game was created using the Godot game engine, and blender 3D modeling software. This game was released under my newly created Tiny Rhino Games brand.</p>
+                                <p id="navbar-home" font-style:italic><a>click here for more details and to play an excerpt of the game</a></p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row gx-0 justify-content-center">
+                <!-- <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/demo-image-02.jpg" alt="..." /></div> -->
+                <div class="col-lg-6"><video class="videoInsert" autoplay="false" muted="false" src="static/assets/HPBoating/HPBoating(720p.23.9fps).mp4" ></video></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">3D Point and Shoot Demo</h4>
+                                <p class="mb-0 text-white-50">A small 3D point and shoot game built in the Godot game engine. This game incorporates a level generation tool, and NPC spawning tool based on the tutorial series by youtuber AgeofAsparagus.</p>
+                                <p id="navbar-home" font-style:italic><a>click here to play an excerpt of the game</a></p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Three Row-->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/demo-image-01.jpg" alt="..." /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">2D RPG Demo</h4>
+                                <p class="mb-0 text-white-50">A 2D top down pixel art RPG demo built in the Godot game engine. This demo is based on the tutorial series from youtuber 'HeartBeast'</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

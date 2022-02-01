@@ -22,3 +22,7 @@ def index():
 @app.route('/game-development')
 def game_development():
     return render_template('gamedev.html', current_title="Game Development")
+
+@app.route('/hyde-park-boating')
+def hyde_park_boating():
+    return render_template('game_projects/hpboating.html', current_title="Hyde Park Boating")

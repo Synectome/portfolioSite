@@ -1,0 +1,221 @@
+<!-- <html> -->
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+
+<style type="text/css">
+
+        #mynetwork {
+            /* width: 500px; */
+            height: 500px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+            padding: 1% 1% 1% 1%;       
+        }
+
+</style>
+
+</head>
+<!-- <body> -->
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#d37427", 
+                            "id": 1, 
+                            "image": "static/assets/img/WebDevNode.png", 
+                            // "label": "Web Dev", 
+                            "shape": "image", 
+                            "title": "Web Development", 
+                            "mass": 2,
+                            "value": 200}, 
+
+                            {"color": "#1cabc4", 
+                            "id": 2, 
+                            "image": "static/assets/img/GameDevNode.png", 
+                            // "label": "Game Dev", 
+                            "shape": "image", 
+                            "title": "Game Development", 
+                            "mass": 5,
+                            "value": 200}, 
+
+                            {"color": "#6610f2", 
+                            "id": 3, 
+                            "image": "static/assets/img/DataSciNode.png", 
+                            // "label": "Data Science", 
+                            "shape": "image", 
+                            "title": "Data Science", 
+                            "value": 200}, 
+                            {"color": "#399136", 
+                            "id": 4, 
+                            "image": "static/assets/img/SoftDevNode.png", 
+                            // "label": "Software Dev", 
+                            "shape": "image", 
+                            "title": "Software Development", 
+                            "value": 200}, 
+                            {"color": "#adb5bd", 
+                            "id": 5, 
+                            "image": "static/assets/img/python(250px).png", 
+                            // "label": 5, 
+                            "shape": "image", 
+                            "title": "Python", 
+                            "value": 120}, 
+                            {"color": "#adb5bd", 
+                            "id": 6, 
+                            "image": "static/assets/img/Java(250px).png", 
+                            // "label": 6, 
+                            "shape": "image", 
+                            "title": "Java", 
+                            "value": 55}, 
+                            {"color": "#adb5bd", 
+                            "id": 7, 
+                            "image": "static/assets/img/Cpp(250px).png", 
+                            // "label": 7, 
+                            "shape": "image", 
+                            "title": "C++", 
+                            "value": 100}, 
+                            {"color": "#adb5bd", 
+                            "id": 8, 
+                            "image": "static/assets/img/Clang(250px).png", 
+                            // "label": 8, 
+                            "shape": "image", 
+                            "title": "C", 
+                            "value": 80}, 
+                            {"color": "#adb5bd", 
+                            "id": 9, 
+                            "image": "static/assets/img/R(250px).png", 
+                            // "label": 9, 
+                            "shape": "image", 
+                            "title": "R", 
+                            "value": 100}, 
+                            {"color": "#adb5bd", 
+                            "id": 10, 
+                            "image": "static/assets/img/javascript(250px).png", 
+                            // "label": 10, 
+                            "shape": "image", 
+                            "title": "JavaScript", 
+                            "value": 60}, 
+                            {"color": "#adb5bd", 
+                            "id": 11, 
+                            "image": "static/assets/img/MySQL(250px).png", 
+                            // "label": "SQL", 
+                            "shape": "image", 
+                            "value": 65}, 
+                            {"color": "#adb5bd", 
+                            "id": 12, 
+                            "image": "static/assets/img/HTML(apx.250px).png", 
+                            // "label": 12, 
+                            "shape": "image", 
+                            "title": "HTML", 
+                            "value": 70}, 
+                            {"color": "#adb5bd", 
+                            "id": 13, 
+                            "image": "static/assets/img/css(apx.250px).png", 
+                            // "label": 13, 
+                            "shape": "image", 
+                            "title": "CSS", 
+                            "value": 60}, 
+                            {"color": "#adb5bd", 
+                            "id": 14, 
+                            "image": "static/assets/img/GDscript(250px).png", 
+                            // "label": 14, 
+                            "shape": "image", 
+                            "title": "GDScript", 
+                            "value": 100}, 
+                            {"color": "#1cabc4", 
+                            "id": 15, 
+                            "image": "static/assets/img/Godot(250px).png", 
+                            // "label": 15, 
+                            "shape": "image", 
+                            "title": "Godot", 
+                            "value": 90}, 
+                            {"color": "#1cabc4", 
+                            "id": 16, 
+                            "image": "static/assets/img/blender(250px).png", 
+                            // "label": 16, 
+                            "shape": "image", 
+                            "title": "Blender", 
+                            "value": 60}, 
+                            {"color": "#1cabc4", 
+                            "id": 17, 
+                            "image": "static/assets/img/REDCap(250px).png", 
+                            // "label": 17, 
+                            "shape": "image", 
+                            "title": "REDCap", 
+                            "value": 50}]);
+
+        edges = new vis.DataSet([{"from": 1, "to": 5, "width": 5}, 
+                {"from": 1, "to": 12, "width": 2}, 
+                {"from": 1, "to": 13, "width": 1}, 
+                {"from": 1, "to": 10, "width": 2}, 
+                {"from": 1, "to": 11, "width": 3}, 
+                {"from": 2, "to": 14, "width": 5}, 
+                {"from": 2, "to": 15, "width": 5}, 
+                {"from": 2, "to": 16, "width": 3}, 
+                {"from": 3, "to": 5, "width": 5}, 
+                {"from": 3, "to": 9, "width": 5}, 
+                {"from": 3, "to": 17, "width": 2}, 
+                {"from": 4, "to": 5, "width": 4}, 
+                {"from": 4, "to": 6, "width": 2}, 
+                {"from": 4, "to": 7, "width": 4}, 
+                {"from": 4, "to": 8, "width": 3}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        network = new vis.Network(container, data, options);
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+<!-- </body> -->
+<!-- </html> -->
