@@ -11883,51 +11883,13 @@ body {
   padding: 4rem;
 }
 
-/* MASTHEAD-HPBOATING
-.hpmasthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("static/assets/HPBoating/HPBoatingMain.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+.simple-padding-lr {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.hpmasthead h1, .hpmasthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+
+.simple-padding-lrb {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
 }
-.hpmasthead h2, .hpmasthead .h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .hpmasthead h1, .hpmasthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-@media (min-width: 992px) {
-  .hpmasthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .hpmasthead h1, .hpmasthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .hpmasthead h2, .hpmasthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
-} */
