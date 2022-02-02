@@ -11622,6 +11622,12 @@ body {
   padding: 10rem 0;
   background-image: linear-gradient(to top, #000000 0%, #ffffff 100%);
 }
+
+.projects-section-gamedev {
+  padding: 10rem 0;
+  background-image: linear-gradient(to top, #ffffff 0%, #000000 100%);
+}
+
 .projects-section .featured-text {
   padding: 2rem;
 }
