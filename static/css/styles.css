@@ -11814,6 +11814,19 @@ body {
   z-index: -1;
 }
 
+/* masthead hpboating */
+#background-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 /*  hover glow effect */
 /*  https://css-tricks.com/how-to-create-neon-text-with-css/ */
 #neonText h2:hover{
@@ -11866,7 +11879,11 @@ body {
   overflow: hidden;
 }
 
-/* MASTHEAD-HPBOATING */
+.simple-padding {
+  padding: 4rem;
+}
+
+/* MASTHEAD-HPBOATING
 .hpmasthead {
   position: relative;
   width: 100%;
@@ -11913,4 +11930,4 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
-}
+} */
